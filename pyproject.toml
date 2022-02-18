@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "risk-actions"
+version = "1.0.0"
+description = ""
+authors = [
+  "Lucas Campos Vieira <lucas.cvieira@stone.com.br>",
+  "Maycon Carlete Rodrigues <maycon.rodrigues@pagar.me>",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10.0"
+Flask = "^2.0.2"
+requests = "^2.26.0"
+google-cloud-pubsub = "^2.9.0"
+google-cloud-logging = "^2.7.0"
+google-cloud-firestore = "^2.3.4"
+PyJWT = "^2.3.0"
+gunicorn = "^20.1.0"
+newrelic = "^7.2.4"
+simple-salesforce = "^1.11.4"
+sentry-sdk = {extras = ["flask"], version = "^1.5.1"}
+pydantic = "1.8.2"
+python-json-logger = "2.0.2"
+jupyterlab = "3.2.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

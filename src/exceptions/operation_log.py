@@ -1,0 +1,2 @@
+class OperationLogError(Exception):
+    pass
